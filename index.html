@@ -1,9 +1,40 @@
 <!doctype html>
 <html>
 <head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>  
+  <title>Times Table</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is a times table. a number line with points wrapped into a circle. Then for each point the number is multiplied by the factor and a line is drawn from the point to the product modulus number of points.">
+  <meta name="keywords" content="times table">
+  <meta name="author" content="Ryan Wilson">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
   <script src="sketch.js"></script>
 </head>
 <body>
+  <div class="ui container">
+    <div class="ui grid">
+      <div class="twelve wide column">
+        <div id="canvasContainer"></div>
+      </div>
+      <div class="three wide column">
+        <form class="ui form" id="form" onsubmit="return false;">
+          <div class="field" id="points">
+            <label>Number of points</label>
+          </div>
+          <div class="field" id="factor">
+            <label>factor</label>
+          </div>
+          <div class="field" id="running">
+            <label>Running</label>
+          </div>
+          <div class="field" id="speed">
+            <label>Speed</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
